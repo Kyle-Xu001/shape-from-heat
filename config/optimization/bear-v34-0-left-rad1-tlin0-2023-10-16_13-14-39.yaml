@@ -1,0 +1,62 @@
+video_name: example_video
+split_final_stage: true
+normal_const_heatmap_ids: [0, 1]
+
+stages:
+  Sopti_params:
+    - num_iterations: 180
+      learning_rate: 0.01
+      lambda_: 2
+      laplacian_reg: 0.0
+      normal_reg: 0.01
+      lambda_symmetric_verts: 10000.0
+      lambda_normal_halfspace: 0.01
+      lambda_reg_init_mesh: 0.0
+      activate_laplacian_reg_after_step: 500
+      activate_normal_reg_after_step: 2000
+      reduce_normal_halfspace_lambda: true
+
+    - num_iterations: 40
+      learning_rate: 0.001
+      lambda_: 2
+      laplacian_reg: 0.0
+      normal_reg: 0.10
+      lambda_symmetric_verts: 10000.0
+      lambda_normal_halfspace: 0.01
+      lambda_reg_init_mesh: 0.0
+      activate_laplacian_reg_after_step: 0
+      activate_normal_reg_after_step: 5000
+      opti_close_to_init_mesh: false
+
+    - num_iterations: 200
+      learning_rate: 0.01
+      lambda_: 1.0
+      laplacian_reg: 0.0
+      normal_reg: 0.15
+      lambda_symmetric_verts: 10000.0
+      lambda_normal_halfspace: 0.0
+      lambda_reg_init_mesh: 1.0
+      activate_laplacian_reg_after_step: 0
+      activate_normal_reg_after_step: 0
+      opti_close_to_init_mesh: true
+  
+  params:
+    - use_normal_halfspace_constraint: true
+      depth_onlyfor_interior: false
+      use_image_symmetry_constraint: true
+      eps_for_halfspace_const: 0.10
+
+    - use_normal_halfspace_constraint: true
+      depth_onlyfor_interior: false
+      use_image_symmetry_constraint: true
+      eps_for_halfspace_const: 0.10
+    
+    - use_normal_halfspace_constraint: false
+      depth_onlyfor_interior: true
+      use_image_symmetry_constraint: true
+      eps_for_halfspace_const: 0.10
+      optimize_MinvL: false
+
+
+pre_final_stage_sizes: []
+pre_final_stage_iterations: [] 

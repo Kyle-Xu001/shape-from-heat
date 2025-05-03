@@ -1,0 +1,24 @@
+torch==1.13.0
+torchvision==0.14.0
+pytorch3d==0.7.2
+
+numpy==1.24.0
+scipy>=1.9.1
+scikit-learn>=1.0.2
+scikit-image>=0.19.2
+
+opencv-python>=4.5.5.64
+opencv-contrib-python>=4.5.5.64
+pillow>=9.2.0
+
+PyYAML>=6.0
+tqdm>=4.64.1
+matplotlib>=3.6.2
+pandas>=1.4.4
+
+tensorboard>=2.9.0  # for visualization
+jupyter>=1.0.0  # for notebooks
+plotly>=5.9.0  # for visualization
+
+# Note: PyTorch with CUDA 11.6 should be installed separately using:
+# conda install pytorch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 pytorch-cuda=11.6 -c pytorch -c nvidia 

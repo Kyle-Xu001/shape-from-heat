@@ -1,0 +1,10 @@
+**/.DS_Store
+**/.ipynb_checkpoints/**
+**/results/**
+DATA/obj_study_raw/**
+._.*
+**.pyc
+**.ini
+**.stl
+**/__pycache__/**
+**/colmap-projs/**
