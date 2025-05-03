@@ -8,3 +8,4 @@ DATA/obj_study_raw/**
 **.stl
 **/__pycache__/**
 **/colmap-projs/**
+**/tb-logs/**

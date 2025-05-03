@@ -22,7 +22,22 @@ conda create -n shape-from-heat python=3.10
 conda activate shape-from-heat
 conda install pytorch==1.13.0 torchvision==0.14.0 pytorch-cuda=11.6 -c pytorch -c nvidia
 pip install -r requirements.txt
+pip install gdown  # Required for downloading data
 ```
+
+## Data Download
+
+The dataset can be downloaded using the provided script:
+
+```bash
+# Make the script executable (if not already)
+chmod +x scripts/download_data.sh
+
+# Run the download script
+./scripts/download_data.sh
+```
+
+Alternatively, you can manually download the data from [Google Drive](https://drive.google.com/drive/folders/1PBby4Sja-j1e8alLoX8eFvUw0BH-LCcd?usp=sharing) and place it in the `DATA/object_study_raw` directory.
 
 ## Project Structure
 
