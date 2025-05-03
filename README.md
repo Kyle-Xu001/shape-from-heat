@@ -4,6 +4,8 @@ This repository contains the official implementation of the paper "Shape from He
 
 [Project Website](https://www.cs.cmu.edu/~ILIM/shape_from_heat/)
 
+![Shape from Heat Conduction](imgs/sfhc.png)
+
 ## Overview
 
 Shape from Heat Conduction is a novel shape recovery approach that leverages the properties of heat transport, specifically heat conduction, induced on objects through a heating or cooling process. The method can reconstruct shapes of objects with diverse visible reflectance properties, including those that are transparent or translucent to visible light.
