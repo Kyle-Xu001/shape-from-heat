@@ -9,3 +9,6 @@ DATA/obj_study_raw/**
 **/__pycache__/**
 **/colmap-projs/**
 **/tb-logs/**
+output_frames/
+DATA
+**/.ipynvb_checkpoints/** */
