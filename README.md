@@ -41,6 +41,8 @@ chmod +x scripts/download_data.sh
 
 Alternatively, you can manually download the data from [Google Drive](https://drive.google.com/drive/folders/1PBby4Sja-j1e8alLoX8eFvUw0BH-LCcd?usp=sharing) and place it in the `DATA/object_study_raw` directory.
 
+For the masks, you can download them from [Google Drive](https://drive.google.com/drive/folders/1yelMdtds9VTstfxDjqux0K6vlZeAJyFQ?usp=sharing) and place them in the `DATA/object_study_proc` directory.
+
 ## Project Structure
 
 ```
