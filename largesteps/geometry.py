@@ -62,7 +62,7 @@ def laplacian_cot(verts, faces):
     # L[v2, v1] = cota
     # L[v0, v2] = cotb
     # L[v1, v0] = cotc
-    L += L.t()
+    L = L + L.t()
 
     # Add the diagonal indices
     vals = torch.sparse.sum(L, dim=0).to_dense()

@@ -12,3 +12,4 @@ DATA/obj_study_raw/**
 output_frames/
 DATA
 **/.ipynvb_checkpoints/** */
+pytorch3d-0.7.2/

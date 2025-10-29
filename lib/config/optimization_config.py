@@ -39,7 +39,7 @@ class VideoOptimizationConfig:
     params_stages: List[GeneralParamsClass]
     split_final_stage: Optional[bool] = None
     normal_const_heatmap_ids: Optional[List[int]] = None
-    pre_final_stage_sizes: Optional[List[tuple[int, int]]] = None
+    pre_final_stage_sizes: Optional = None
     pre_final_stage_iterations: Optional[List[int]] = None
 
     def __post_init__(self):

@@ -131,7 +131,7 @@ class LaplacianOptimization(BaseOptimizationClass):
             
             ############################################################
             L = torch.sparse_coo_tensor(self.MinvL_locs, (self.MinvLopti)**1, size=(V, V))
-            L += L.t()
+            L = L + L.t()
             vals = torch.sparse.sum(L, dim=-1).to_dense()
             indices = torch.arange(V, device='cuda')
             idx = torch.stack([indices, indices], dim=0)
